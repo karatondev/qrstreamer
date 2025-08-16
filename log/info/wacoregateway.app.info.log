@@ -1,0 +1,638 @@
+2025-08-16 11:12:15.312 - INFO - MAIN - Application started
+2025-08-16 11:13:09.999 - INFO - MAIN - Application started
+2025-08-16 11:13:34.411 - INFO - MAIN - Application started
+2025-08-16 11:14:55.352 - INFO - MAIN - Application started
+2025-08-16 11:14:55.355 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 11:15:07.780 - INFO - MAIN - Receiving signal: interrupt
+2025-08-16 11:15:07.780 - INFO - MAIN - Successfully stop Application.
+2025-08-16 11:15:19.918 - INFO - MAIN - Application started
+2025-08-16 11:15:19.919 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 11:15:26.078 - INFO - MAIN - Receiving signal: interrupt
+2025-08-16 11:15:26.078 - INFO - MAIN - Successfully stop Application.
+2025-08-16 11:16:09.800 - INFO - MAIN - Application started
+2025-08-16 11:16:09.801 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 11:16:44.102 - INFO - MAIN - Receiving signal: terminated
+2025-08-16 11:16:44.103 - INFO - MAIN - Successfully stop Application.
+2025-08-16 11:19:33.685 - INFO - MAIN - Application started
+2025-08-16 11:19:33.686 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 11:19:33.703 - INFO - MAIN - gRPC client connected successfully to localhost:50051
+2025-08-16 11:19:33.703 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:19:43.704 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:19:53.705 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:20:03.706 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:20:11.339 - INFO - MAIN - Receiving signal: interrupt
+2025-08-16 11:20:11.342 - INFO - MAIN - Successfully stop Application.
+2025-08-16 11:20:18.796 - INFO - MAIN - Application started
+2025-08-16 11:20:18.797 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 11:20:18.822 - INFO - MAIN - gRPC client connected successfully to localhost:50051
+2025-08-16 11:20:18.822 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:20:28.823 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:20:38.824 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:20:48.832 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:20:58.832 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:21:08.834 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:21:17.930 - INFO - MAIN - Receiving signal: interrupt
+2025-08-16 11:21:17.930 - INFO - MAIN - Successfully stop Application.
+2025-08-16 11:21:25.635 - INFO - MAIN - Application started
+2025-08-16 11:21:25.637 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 11:21:25.670 - INFO - MAIN - gRPC client connected successfully to localhost:50051
+2025-08-16 11:21:25.670 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:21:35.671 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:21:45.672 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:21:55.674 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:22:05.674 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:22:15.679 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:22:17.681 - INFO - MAIN - Receiving signal: interrupt
+2025-08-16 11:22:17.681 - INFO - MAIN - Successfully stop Application.
+2025-08-16 11:22:25.839 - INFO - MAIN - Application started
+2025-08-16 11:22:25.841 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 11:22:25.870 - INFO - MAIN - gRPC client connected successfully to localhost:50051
+2025-08-16 11:22:25.870 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:22:35.871 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:22:45.872 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:22:55.873 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:23:05.874 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:23:15.876 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:23:25.877 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:23:35.878 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:23:45.879 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:23:55.881 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:24:05.882 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:24:15.883 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:24:25.884 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:24:35.885 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:24:45.885 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:24:55.885 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:25:05.887 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:25:15.887 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:25:25.888 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:25:25.980 - INFO - MAIN - Receiving signal: interrupt
+2025-08-16 11:25:25.984 - INFO - MAIN - Successfully stop Application.
+2025-08-16 11:25:32.461 - INFO - MAIN - Application started
+2025-08-16 11:25:32.463 - INFO - MAIN - Websocket Server started on :8080
+2025-08-16 11:25:32.463 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 11:25:32.493 - INFO - MAIN - gRPC client connected successfully to localhost:50051
+2025-08-16 11:25:32.493 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:25:42.494 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:25:52.495 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:26:02.496 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:26:12.497 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:26:22.498 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:26:32.499 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:26:42.501 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:26:52.502 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:27:02.503 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:27:12.506 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:27:22.507 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:27:32.509 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:27:42.510 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:27:52.510 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:28:02.511 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:28:12.512 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:28:22.513 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:28:32.513 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:28:42.515 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:28:52.516 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:29:02.518 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:29:12.519 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:29:22.520 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:29:32.521 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:29:42.521 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:29:52.523 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:30:02.524 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:30:12.525 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:30:22.527 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 11:30:29.319 - INFO - MAIN - Receiving signal: terminated
+2025-08-16 11:30:29.324 - INFO - MAIN - Successfully stop Application.
+2025-08-16 11:37:37.745 - INFO - MAIN - Application started
+2025-08-16 11:37:37.748 - INFO - MAIN - Websocket Server started on :8080
+2025-08-16 11:37:37.748 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 11:41:36.917 - INFO - MAIN - Receiving signal: interrupt
+2025-08-16 11:41:36.918 - INFO - MAIN - Successfully stop Application.
+2025-08-16 11:41:43.493 - INFO - MAIN - Application started
+2025-08-16 11:41:43.496 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 11:41:43.496 - INFO - MAIN - Websocket Server started on :8080
+2025-08-16 11:58:06.423 - INFO - MAIN - Receiving signal: interrupt
+2025-08-16 11:58:06.424 - INFO - MAIN - Successfully stop Application.
+2025-08-16 11:58:11.501 - INFO - MAIN - Application started
+2025-08-16 11:58:11.502 - INFO - MAIN - Websocket Server started on :8080
+2025-08-16 11:58:11.502 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 12:04:38.716 - INFO - MAIN - Receiving signal: interrupt
+2025-08-16 12:04:38.716 - INFO - MAIN - Successfully stop Application.
+2025-08-16 12:04:44.109 - INFO - MAIN - Application started
+2025-08-16 12:04:44.110 - INFO - MAIN - Websocket Server started on :8080
+2025-08-16 12:04:44.110 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 12:07:04.443 - INFO - MAIN - Receiving signal: interrupt
+2025-08-16 12:07:04.443 - INFO - MAIN - Successfully stop Application.
+2025-08-16 12:07:09.611 - INFO - MAIN - Application started
+2025-08-16 12:07:09.611 - INFO - MAIN - Websocket Server started on :8080
+2025-08-16 12:07:09.611 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 12:12:38.603 - INFO - MAIN - Receiving signal: interrupt
+2025-08-16 12:12:38.605 - INFO - MAIN - Successfully stop Application.
+2025-08-16 12:12:45.710 - INFO - MAIN - Application started
+2025-08-16 12:12:45.711 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 12:12:45.711 - INFO - MAIN - Websocket Server started on :8080
+2025-08-16 12:21:32.452 - INFO - MAIN - Receiving signal: interrupt
+2025-08-16 12:21:32.452 - INFO - MAIN - Successfully stop Application.
+2025-08-16 12:21:37.807 - INFO - MAIN - Application started
+2025-08-16 12:21:37.808 - INFO - MAIN - Websocket Server started on :8080
+2025-08-16 12:21:37.808 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 13:44:35.781 - INFO - MAIN - Receiving signal: terminated
+2025-08-16 13:44:35.783 - INFO - MAIN - Successfully stop Application.
+2025-08-16 14:58:53.773 - INFO - MAIN - Application started
+2025-08-16 14:58:53.774 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 14:58:53.774 - INFO - MAIN - Websocket Server started on :8080
+2025-08-16 15:22:40.257 - INFO - MAIN - Receiving signal: interrupt
+2025-08-16 15:22:40.258 - INFO - MAIN - Successfully stop Application.
+2025-08-16 15:23:37.405 - INFO - MAIN - Application started
+2025-08-16 15:23:37.406 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 15:23:37.406 - INFO - MAIN - Websocket Server started on :8080
+2025-08-16 15:23:44.709 - INFO - MAIN - Receiving signal: interrupt
+2025-08-16 15:23:44.709 - INFO - MAIN - Successfully stop Application.
+2025-08-16 15:38:26.687 - INFO - MAIN - Application started
+2025-08-16 15:38:26.687 - INFO - MAIN - Websocket Server started on :8080
+2025-08-16 15:38:26.687 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 15:40:03.252 - INFO - MAIN - Application started
+2025-08-16 15:40:03.253 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 15:40:03.253 - INFO - MAIN - Websocket Server started on :8080
+2025-08-16 15:40:03.266 - INFO - MAIN - gRPC client connected successfully to localhost:50051
+2025-08-16 15:40:03.268 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:40:13.269 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:40:23.270 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:40:33.271 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:40:43.271 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:40:53.272 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:41:03.274 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:41:13.274 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:41:23.275 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:41:33.276 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:41:43.277 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:41:53.278 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:42:03.279 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:42:13.279 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:42:23.280 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:42:33.281 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:42:43.282 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:42:53.282 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:43:03.283 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:43:13.284 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:43:23.285 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:43:33.286 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:43:43.287 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:43:53.287 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:44:03.288 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:44:13.288 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:44:23.289 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:44:33.290 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:44:43.291 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:44:53.291 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:45:03.292 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:45:13.293 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:45:23.294 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:45:33.295 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:45:43.296 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:45:53.296 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:46:03.297 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:46:13.297 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:46:23.299 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:46:33.299 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:46:43.300 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:46:53.301 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:47:03.301 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:47:13.302 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:47:23.305 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:47:33.305 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:47:43.308 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:47:53.309 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:48:03.309 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:48:13.310 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:48:23.311 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:48:33.312 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:48:43.312 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:48:53.313 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:49:03.320 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:49:13.321 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:49:23.322 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:49:33.322 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:49:43.323 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:49:53.324 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:50:03.325 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:50:13.325 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:50:23.327 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:50:33.327 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:50:43.328 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:50:53.329 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:51:03.330 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:51:13.332 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:51:23.333 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:51:33.334 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:51:43.335 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:51:53.336 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:52:03.337 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:52:13.337 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:52:23.338 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:52:33.339 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:52:43.339 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:52:53.340 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:53:03.341 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:53:13.342 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:53:23.343 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:53:33.343 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:53:43.344 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:53:53.344 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:54:03.345 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:54:13.346 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:54:23.347 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:54:33.347 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:54:43.349 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:54:53.350 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:55:03.351 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:55:13.352 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:55:23.352 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:55:33.353 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:55:43.354 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:55:53.355 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:56:03.356 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:56:13.357 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:56:23.357 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:56:33.358 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:56:43.359 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 15:56:53.359 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:15:07.920 - INFO - MAIN - gRPC connection is idle
+2025-08-16 16:15:17.994 - INFO - MAIN - gRPC connection is idle
+2025-08-16 16:15:27.995 - INFO - MAIN - gRPC connection is idle
+2025-08-16 16:15:37.996 - INFO - MAIN - gRPC connection is idle
+2025-08-16 16:15:47.997 - INFO - MAIN - gRPC connection is idle
+2025-08-16 16:15:58.001 - INFO - MAIN - gRPC connection is idle
+2025-08-16 16:16:08.002 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:16:18.004 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:16:28.005 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:16:38.005 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:16:48.007 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:16:58.008 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:17:03.280 - INFO - MAIN - Receiving signal: interrupt
+2025-08-16 16:17:03.280 - INFO - MAIN - Successfully stop Application.
+2025-08-16 16:22:30.867 - INFO - MAIN - Application started
+2025-08-16 16:22:30.868 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 16:22:30.868 - INFO - MAIN - Websocket Server started on :8080
+2025-08-16 16:22:30.884 - INFO - MAIN - gRPC client connected successfully to localhost:50051
+2025-08-16 16:22:30.884 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:22:40.885 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:22:50.886 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:23:00.887 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:23:10.888 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:23:20.888 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:23:30.890 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:23:40.891 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:23:50.892 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:24:00.893 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:24:10.895 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:24:20.896 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:24:30.897 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:24:40.898 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:24:50.898 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:25:00.899 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:25:10.901 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:25:20.902 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:25:30.903 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:25:40.904 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:25:50.906 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:26:00.907 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:26:10.907 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:26:20.908 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:26:30.910 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:26:40.911 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:26:50.912 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:27:00.913 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:27:10.914 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:27:20.915 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:27:30.916 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:27:40.917 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:27:50.918 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:28:00.919 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:28:10.921 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:28:20.922 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:28:30.923 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:28:40.924 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:28:50.925 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:29:00.926 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:29:10.927 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:29:20.928 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:29:30.929 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:29:40.931 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:29:50.932 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:30:00.933 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:30:10.934 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:30:20.935 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:30:30.937 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:30:40.939 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:30:50.946 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:31:00.947 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:31:10.948 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:31:20.949 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:31:30.950 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:31:40.961 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:31:44.374 - INFO - MAIN - Receiving signal: interrupt
+2025-08-16 16:31:44.374 - INFO - MAIN - Successfully stop Application.
+2025-08-16 16:31:52.643 - INFO - MAIN - Application started
+2025-08-16 16:31:52.646 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 16:31:52.646 - INFO - MAIN - Websocket Server started on :8080
+2025-08-16 16:31:52.681 - INFO - MAIN - gRPC client connected successfully to localhost:50051
+2025-08-16 16:31:52.681 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:32:02.682 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:32:12.682 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:32:22.683 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:32:32.684 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:32:42.684 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:32:52.685 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:33:02.686 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:33:12.687 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:33:22.688 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:33:32.689 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:33:42.689 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:33:52.690 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:34:02.691 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:34:12.693 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:34:22.694 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:34:32.695 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:34:42.696 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:34:49.623 - INFO -  - Stream closed by server
+2025-08-16 16:34:52.698 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:35:02.700 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:35:12.701 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:35:22.702 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:35:32.703 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:35:42.704 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:35:52.705 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:36:02.708 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:36:12.711 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:36:22.712 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:36:32.713 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:36:42.714 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:36:52.715 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:37:00.778 - INFO - MAIN - Receiving signal: interrupt
+2025-08-16 16:37:00.778 - INFO - MAIN - Successfully stop Application.
+2025-08-16 16:37:09.849 - INFO - MAIN - Application started
+2025-08-16 16:37:09.851 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 16:37:09.851 - INFO - MAIN - Websocket Server started on :8080
+2025-08-16 16:37:09.879 - INFO - MAIN - gRPC client connected successfully to localhost:50051
+2025-08-16 16:37:09.879 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:37:19.880 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:37:29.881 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:37:39.882 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:37:49.883 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:37:59.884 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:38:09.885 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:38:19.886 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:38:29.886 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:38:39.887 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:38:49.888 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:38:59.890 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:39:09.891 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:39:19.892 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:39:29.894 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:39:39.896 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:39:49.898 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:39:54.715 - INFO - MAIN - Receiving signal: interrupt
+2025-08-16 16:39:54.717 - INFO - MAIN - Successfully stop Application.
+2025-08-16 16:42:06.702 - INFO - MAIN - Application started
+2025-08-16 16:42:06.704 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-08-16 16:42:06.704 - INFO - MAIN - Websocket Server started on :8080
+2025-08-16 16:42:06.737 - INFO - MAIN - gRPC client connected successfully to localhost:50051
+2025-08-16 16:42:06.737 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:42:16.747 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:42:26.754 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:42:36.755 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:42:37.547 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"a123","data":"2@3egFmeRUcubIWEIRqFGaiJYK/89DRsxqxTAWcjf0TYhmGd3quEaxSNXDR+QEEFaOgQv/eP89lx+bSh/sF5elxchbHelQX9w/z6Y=,N6KMQC5GeRxMLIlVKCWI59dEhpU9QUo08tHiJTDEN1M=,iDL72xSydAOTiw5MTlQpB9bqBCNHZFXZ4SqiR2+z4iY=,TUYEtTjvN5egyQo53XiaZkaykPeQALAgkcfeTpxwPvo=","timestamp":"2025-08-16T16:42:37.5474476+07:00"}
+2025-08-16 16:42:46.756 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:42:56.756 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:43:06.757 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:43:16.757 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:43:26.758 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:43:36.759 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:43:37.547 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"a123","data":"2@n6vbITwmPOPVWzVbHq0Shm0VVa+rngKYj81yoJ0Hgkd65qcsKYCQKorpq5kmmBsGYD3bGRPTNEm3NbEW0sbL/upEAs7qFexnzek=,N6KMQC5GeRxMLIlVKCWI59dEhpU9QUo08tHiJTDEN1M=,iDL72xSydAOTiw5MTlQpB9bqBCNHZFXZ4SqiR2+z4iY=,TUYEtTjvN5egyQo53XiaZkaykPeQALAgkcfeTpxwPvo=","timestamp":"2025-08-16T16:43:37.5466856+07:00"}
+2025-08-16 16:43:46.760 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:43:56.761 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:43:57.547 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"a123","data":"2@GKrC8wgzOZjPhNDYdEj0s/mrCM3XHB64GRuC9qNW4+AUJzlRMo42YGKUHW2nJKgI4h9ahJzpVXfBOSDunOsvuh9PL4u6wGeHZyQ=,N6KMQC5GeRxMLIlVKCWI59dEhpU9QUo08tHiJTDEN1M=,iDL72xSydAOTiw5MTlQpB9bqBCNHZFXZ4SqiR2+z4iY=,TUYEtTjvN5egyQo53XiaZkaykPeQALAgkcfeTpxwPvo=","timestamp":"2025-08-16T16:43:57.54727+07:00"}
+2025-08-16 16:44:06.762 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:44:16.763 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:44:17.548 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"a123","data":"2@+dDSL2j/ZRu3Rw8Fip94Jm38XamWH28MnKH9di7d61EZhxMeX+fD+pKyzGjSFQyINgGe8jagORnZ0IW5E+UUp5mpxQQaznTwHL8=,N6KMQC5GeRxMLIlVKCWI59dEhpU9QUo08tHiJTDEN1M=,iDL72xSydAOTiw5MTlQpB9bqBCNHZFXZ4SqiR2+z4iY=,TUYEtTjvN5egyQo53XiaZkaykPeQALAgkcfeTpxwPvo=","timestamp":"2025-08-16T16:44:17.5477779+07:00"}
+2025-08-16 16:44:26.764 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:44:36.765 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:44:37.549 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"a123","data":"2@1zQOJMuMJyZtUkpzAKTMxQFzv6Jl8SpJLCNwrnXOsty9EwvhFKMmrCUMB/1+UavqPx0BGuMGPM5DJOAv4++fULX7uB/SnwDQYzc=,N6KMQC5GeRxMLIlVKCWI59dEhpU9QUo08tHiJTDEN1M=,iDL72xSydAOTiw5MTlQpB9bqBCNHZFXZ4SqiR2+z4iY=,TUYEtTjvN5egyQo53XiaZkaykPeQALAgkcfeTpxwPvo=","timestamp":"2025-08-16T16:44:37.549513+07:00"}
+2025-08-16 16:44:46.766 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:44:56.767 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:44:57.550 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"a123","data":"2@/ObEwtAIZHa64ExrdqN7EfbnPw2IhOdeTJTmzt3pIYeMtM2PLHhpZMTYC3IaVWVsZ4XX0IXctihVcqsOh0sne9vcXBz6Bs6CK9E=,N6KMQC5GeRxMLIlVKCWI59dEhpU9QUo08tHiJTDEN1M=,iDL72xSydAOTiw5MTlQpB9bqBCNHZFXZ4SqiR2+z4iY=,TUYEtTjvN5egyQo53XiaZkaykPeQALAgkcfeTpxwPvo=","timestamp":"2025-08-16T16:44:57.5505363+07:00"}
+2025-08-16 16:45:06.767 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:45:16.768 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:45:17.553 - INFO -  - Stream closed by server
+2025-08-16 16:45:26.768 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:45:36.769 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:45:46.769 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:45:56.770 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:46:06.771 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:46:16.772 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:46:26.773 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:46:36.774 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:46:44.714 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"b456","data":"2@5NCYDmcjs4ZQtZHPRB1HHGq3/q7Q91yUkm8LZkC5ULXuN4Y82gSwkccpuvZDKcB+GitlHcgcUN/na9UZFqEL/WLg2uB/cgNo31Y=,vJFBiJIVdcHeNOIXwmsx2qpSJaLaSkXI9GG/V/pplE8=,wQxxrgSxlfRaPf/O8s4vm52pP+/2/Ujo9X7mX8pfwTM=,AZk5oTz6zMxCdAQiJdhvrzZhsz6hfIFEtWx8jqJs+js=","timestamp":"2025-08-16T16:46:44.7144544+07:00"}
+2025-08-16 16:46:46.775 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:46:56.775 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:47:06.776 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:47:16.778 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:47:26.778 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:47:36.780 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:47:44.715 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"b456","data":"2@IlAe3NFuJm1UyciZsm5HnJUGDVtewpKd53fYrIeqgb/9SXwyjStkMqeoxCK7JHewSGdwOh3pjsu/FcI9Ov6/j3sbbgpoNMcj4RI=,vJFBiJIVdcHeNOIXwmsx2qpSJaLaSkXI9GG/V/pplE8=,wQxxrgSxlfRaPf/O8s4vm52pP+/2/Ujo9X7mX8pfwTM=,AZk5oTz6zMxCdAQiJdhvrzZhsz6hfIFEtWx8jqJs+js=","timestamp":"2025-08-16T16:47:44.715015+07:00"}
+2025-08-16 16:47:46.780 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:47:56.781 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:48:00.663 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"a123","data":"2@nmZ6uMRI9CuJ2vJ5fmcAFutU0G1qflC4Tz59sdf77wS2fTXYM5ui1dIlNbgdl9EsVm722w0eFIWM/ey7MZ+ooK5Kt/eN9rOMoQM=,vn+dJwiippqpq/7De/53/JKzURrPAOcq8FZENOqj3zA=,deyT7I4XtDSb7pXWI7ZTP+FqJLv34nOxQyT+JPnvxBM=,bJQDHLa92MhsGsIecXLF07x6eOKMQaKp04ByDeBxSVc=","timestamp":"2025-08-16T16:48:00.6633834+07:00"}
+2025-08-16 16:48:04.716 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"b456","data":"2@olMbTfihIL5WEaWU3TnK2D2kObKscrVYs/U8kSNUSQ4z23Ln1kt3iNtBzGpQAibWf4/r29dwuVQl+hH4wa8eF40FPjfiuy/9WHU=,vJFBiJIVdcHeNOIXwmsx2qpSJaLaSkXI9GG/V/pplE8=,wQxxrgSxlfRaPf/O8s4vm52pP+/2/Ujo9X7mX8pfwTM=,AZk5oTz6zMxCdAQiJdhvrzZhsz6hfIFEtWx8jqJs+js=","timestamp":"2025-08-16T16:48:04.7163096+07:00"}
+2025-08-16 16:48:06.782 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:48:16.783 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:48:24.716 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"b456","data":"2@VytjpItDkUQVzbDvhs+yr/j7l4ZAU7hozZJxv+wbn3mZD00DFllUYoAD3j1aknY8Tkwg5Mou/jbQdlHmzz9jpu8KClxHj9ENr4g=,vJFBiJIVdcHeNOIXwmsx2qpSJaLaSkXI9GG/V/pplE8=,wQxxrgSxlfRaPf/O8s4vm52pP+/2/Ujo9X7mX8pfwTM=,AZk5oTz6zMxCdAQiJdhvrzZhsz6hfIFEtWx8jqJs+js=","timestamp":"2025-08-16T16:48:24.7166109+07:00"}
+2025-08-16 16:48:26.784 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:48:36.784 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:48:44.723 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"b456","data":"2@KUQG6qIuv6AhBlfIEDFOSpnGj2+F8S6/ATvFaM0jIrff167fL+2UhZNvnuMQSSY2O9FIE0wHipsFdop5QVI887MuCQVLa2W8EP4=,vJFBiJIVdcHeNOIXwmsx2qpSJaLaSkXI9GG/V/pplE8=,wQxxrgSxlfRaPf/O8s4vm52pP+/2/Ujo9X7mX8pfwTM=,AZk5oTz6zMxCdAQiJdhvrzZhsz6hfIFEtWx8jqJs+js=","timestamp":"2025-08-16T16:48:44.72258+07:00"}
+2025-08-16 16:48:46.785 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:48:56.786 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:49:00.664 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"a123","data":"2@MKf2MM9v5vN3U19BOupxflXMA+Io2K1pjl5IHRF6qp0L6mJWStw2tm6+m911YA4TfoFxBTpoQcE8Y7SjdjP0IpUS8/33stuLe8M=,vn+dJwiippqpq/7De/53/JKzURrPAOcq8FZENOqj3zA=,deyT7I4XtDSb7pXWI7ZTP+FqJLv34nOxQyT+JPnvxBM=,bJQDHLa92MhsGsIecXLF07x6eOKMQaKp04ByDeBxSVc=","timestamp":"2025-08-16T16:49:00.6645698+07:00"}
+2025-08-16 16:49:04.718 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"b456","data":"2@2GtiSLQa74DKx1EA7KNVukmTeDf3RAxf+y4iB+9fnxc8+4j0OF/6bJQjKrP5AwuIRKAnEwAo92CoCS+U0fU1Te6SXdaifGeAl3E=,vJFBiJIVdcHeNOIXwmsx2qpSJaLaSkXI9GG/V/pplE8=,wQxxrgSxlfRaPf/O8s4vm52pP+/2/Ujo9X7mX8pfwTM=,AZk5oTz6zMxCdAQiJdhvrzZhsz6hfIFEtWx8jqJs+js=","timestamp":"2025-08-16T16:49:04.7184276+07:00"}
+2025-08-16 16:49:06.786 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:49:16.787 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:49:20.664 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"a123","data":"2@VoPYSbjxToBE5ULn+beiBjeA7zF4cD1uIkiVkuZj7TIPp6vL3IO6c7Sn98I+2SlqhTO8tWAkNHqCh6JpA+Dg1EXxSWXdufsJV3Q=,vn+dJwiippqpq/7De/53/JKzURrPAOcq8FZENOqj3zA=,deyT7I4XtDSb7pXWI7ZTP+FqJLv34nOxQyT+JPnvxBM=,bJQDHLa92MhsGsIecXLF07x6eOKMQaKp04ByDeBxSVc=","timestamp":"2025-08-16T16:49:20.6648273+07:00"}
+2025-08-16 16:49:24.720 - INFO -  - Stream closed by server
+2025-08-16 16:49:25.950 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"a123","data":"2@9kjOad99mK4wfslbevbltnN5RUDfl9V80RHltzcPwyVhnCSLBLCOS/vntAt94btdKj/qz9EUMbDyVbhehSqre34UKAt6Ay/j/kE=,/hwRGoNgiyhCd9vUh8DJcnkTv6k6HwiRelqEGaRPGxQ=,hdBqilRxtU9OrRAP9PSAn5dk2aoPGMKiXhS4scAoaUk=,OI8Dxn+lgmiXb58iazK/IvkHBU0KDITJpIaaxnqfwUQ=","timestamp":"2025-08-16T16:49:25.950004+07:00"}
+2025-08-16 16:49:26.788 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:49:36.789 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:49:40.665 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"a123","data":"2@V2Wk1WwRl6TRFgsZiaYquIGMrkXKA5+4c9VyGLWt8AgTOsNNgP5CRdJHzuEVP30+h/YqPn2QfLlmym9dLiLNBLnlZPrVfPTO1/E=,vn+dJwiippqpq/7De/53/JKzURrPAOcq8FZENOqj3zA=,deyT7I4XtDSb7pXWI7ZTP+FqJLv34nOxQyT+JPnvxBM=,bJQDHLa92MhsGsIecXLF07x6eOKMQaKp04ByDeBxSVc=","timestamp":"2025-08-16T16:49:40.6656008+07:00"}
+2025-08-16 16:49:46.790 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:49:56.791 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:50:00.666 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"a123","data":"2@aYpDbtNLYiLME/YH4NYBWcnc+jHAMPKOxoCH9yRt5hXuKsFBQsKttjIgaABIsPkaZRQ+VWXsIZmMaKEPvEsZ2rpCem9FcUzJ9o8=,vn+dJwiippqpq/7De/53/JKzURrPAOcq8FZENOqj3zA=,deyT7I4XtDSb7pXWI7ZTP+FqJLv34nOxQyT+JPnvxBM=,bJQDHLa92MhsGsIecXLF07x6eOKMQaKp04ByDeBxSVc=","timestamp":"2025-08-16T16:50:00.6663633+07:00"}
+2025-08-16 16:50:06.791 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:50:16.794 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:50:20.667 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"a123","data":"2@iMbVCfxRY2c/eSGyQUaea9BbJRgmMtMqXAIg9jU5hfA6Va+vJnsj87hHuvUo8IwFGhLGTi0cGiJYj/KPqt8L92FiYKOBpVPJiYU=,vn+dJwiippqpq/7De/53/JKzURrPAOcq8FZENOqj3zA=,deyT7I4XtDSb7pXWI7ZTP+FqJLv34nOxQyT+JPnvxBM=,bJQDHLa92MhsGsIecXLF07x6eOKMQaKp04ByDeBxSVc=","timestamp":"2025-08-16T16:50:20.6671056+07:00"}
+2025-08-16 16:50:25.950 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"a123","data":"2@jbCAuUXJ8LO9FlHvDtPIbE31sFV9qzzLiPS1rKQfkvH80ySGN7hf9FJyMuLcFqmx3U01NYjOjRjqdZuHyp/Cp33zGkeGzbBJHq4=,/hwRGoNgiyhCd9vUh8DJcnkTv6k6HwiRelqEGaRPGxQ=,hdBqilRxtU9OrRAP9PSAn5dk2aoPGMKiXhS4scAoaUk=,OI8Dxn+lgmiXb58iazK/IvkHBU0KDITJpIaaxnqfwUQ=","timestamp":"2025-08-16T16:50:25.9509504+07:00"}
+2025-08-16 16:50:26.795 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:50:36.796 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:50:40.668 - INFO -  - Stream closed by server
+2025-08-16 16:50:45.957 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"a123","data":"2@MHPbZt5nO9rIW/Z/8OL3zwj+ROqkTABHK5M+ryYYzwdLs3xo7RTcNs7Du1FQE9q2jjDWMm4Yc7fXhYe9i4L+YztoNjItHQb4zI4=,/hwRGoNgiyhCd9vUh8DJcnkTv6k6HwiRelqEGaRPGxQ=,hdBqilRxtU9OrRAP9PSAn5dk2aoPGMKiXhS4scAoaUk=,OI8Dxn+lgmiXb58iazK/IvkHBU0KDITJpIaaxnqfwUQ=","timestamp":"2025-08-16T16:50:45.9573362+07:00"}
+2025-08-16 16:50:46.797 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:50:56.798 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:51:05.954 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"a123","data":"2@g1bgQjwh8edZeh85Ech5BPCspz7EQ1RKcx6o2jfAoBx39srrYi+eYm+iG4HykKl2hPUd16kf1LezenX9XrnrwpKI3n9D/WErqYg=,/hwRGoNgiyhCd9vUh8DJcnkTv6k6HwiRelqEGaRPGxQ=,hdBqilRxtU9OrRAP9PSAn5dk2aoPGMKiXhS4scAoaUk=,OI8Dxn+lgmiXb58iazK/IvkHBU0KDITJpIaaxnqfwUQ=","timestamp":"2025-08-16T16:51:05.9538913+07:00"}
+2025-08-16 16:51:06.798 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:51:16.800 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:51:25.954 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"a123","data":"2@kkCtmdazlQikesJ5nXevJI36zdZTsE+ZWo0++JNUyTQtThFsfkXnG/i3dvqGckMSnQw5r0/RKei1J5qWQg3D+iPif289FZ8QkDQ=,/hwRGoNgiyhCd9vUh8DJcnkTv6k6HwiRelqEGaRPGxQ=,hdBqilRxtU9OrRAP9PSAn5dk2aoPGMKiXhS4scAoaUk=,OI8Dxn+lgmiXb58iazK/IvkHBU0KDITJpIaaxnqfwUQ=","timestamp":"2025-08-16T16:51:25.9547455+07:00"}
+2025-08-16 16:51:26.802 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:51:36.803 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:51:45.955 - INFO -  - Emitting QR code  {"type":"qr_code","device_id":"a123","data":"2@qoAwsIcWbZ1NrODo9NSyQq0r0IuolqFCB+IRLwzpDR6ZgrfrokxZ3pwoO2DRHZyudX7m4+Qiwt/P0/nRsu7pXhw75OE6u3rqgcw=,/hwRGoNgiyhCd9vUh8DJcnkTv6k6HwiRelqEGaRPGxQ=,hdBqilRxtU9OrRAP9PSAn5dk2aoPGMKiXhS4scAoaUk=,OI8Dxn+lgmiXb58iazK/IvkHBU0KDITJpIaaxnqfwUQ=","timestamp":"2025-08-16T16:51:45.9553709+07:00"}
+2025-08-16 16:51:46.804 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:51:56.805 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:52:05.956 - INFO -  - Stream closed by server
+2025-08-16 16:52:06.805 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:52:16.807 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:52:26.808 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:52:36.809 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:52:46.811 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:52:56.819 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:53:06.819 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:53:16.821 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:53:26.822 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:53:36.822 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:53:46.824 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:53:56.824 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:54:06.825 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:54:16.826 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:54:26.827 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:54:36.827 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:54:46.828 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:54:56.830 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:55:06.832 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:55:16.833 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:55:26.839 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:55:36.841 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:55:46.842 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:55:56.843 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:56:06.844 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:56:16.844 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:56:26.846 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:56:36.847 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:56:46.848 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:56:56.856 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:57:06.856 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:57:16.858 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:57:26.858 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:57:36.859 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:57:46.861 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:57:56.861 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:58:06.863 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:58:16.863 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:58:26.864 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:58:36.868 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:58:46.868 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:58:56.869 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:59:06.870 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:59:16.871 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:59:26.872 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:59:36.873 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:59:46.874 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 16:59:56.875 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:00:06.876 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:00:16.877 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:00:26.878 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:00:36.879 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:00:46.881 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:00:56.882 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:01:06.883 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:01:16.883 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:01:26.884 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:01:36.885 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:01:46.886 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:01:56.886 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:02:06.887 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:02:16.888 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:02:26.889 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:02:36.890 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:02:46.891 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:02:56.893 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:03:06.894 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:03:16.895 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:03:26.896 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:03:36.897 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:03:46.897 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:03:56.899 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:04:06.900 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:04:16.900 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:04:26.901 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:04:36.902 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:04:46.903 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:04:56.907 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:05:06.909 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:05:16.910 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:05:26.911 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:05:36.912 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:05:46.913 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:05:56.915 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:06:06.916 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:06:16.917 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:06:26.919 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:06:36.919 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:06:46.921 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:06:56.923 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:07:06.924 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:07:16.925 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:07:26.926 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:07:36.927 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:07:46.928 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:07:56.928 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:08:06.930 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:08:16.930 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:08:26.931 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:08:36.932 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:08:46.933 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:08:56.934 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:09:06.935 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:09:16.936 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:09:26.937 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:09:36.939 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:09:46.939 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:09:56.941 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:10:06.942 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:10:16.943 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:10:26.945 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:10:36.946 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:10:46.946 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:10:56.950 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:11:06.952 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:11:16.953 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:11:26.954 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:11:36.955 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:11:46.956 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:11:56.957 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:12:06.958 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:12:16.959 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:12:26.960 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:12:36.960 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:12:46.961 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:12:56.964 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:13:06.965 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:13:16.966 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:13:26.967 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:13:36.967 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:13:46.968 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:13:56.968 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:14:06.970 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:14:16.970 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:14:26.971 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:14:36.972 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:14:46.973 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:14:56.974 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:15:06.975 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:15:16.976 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:15:26.977 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:15:36.978 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:15:46.979 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:15:56.980 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:16:06.980 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:16:16.981 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:16:26.982 - DEBUG - MAIN - gRPC connection is ready
+2025-08-16 17:16:32.404 - INFO - MAIN - Receiving signal: terminated
+2025-08-16 17:16:32.404 - INFO - MAIN - Successfully stop Application.

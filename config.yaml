@@ -1,0 +1,20 @@
+server:
+  port: 50051
+
+logger:
+  dir: log                                  # DO NOT EDIT!
+  file_name: wacoregateway
+  max_backups: 0                            # set 0 for unlimited backups
+  max_size: 10                              # in mb
+  max_age: 90                               # in days, set 0 for unlimited days
+  compress: true
+  local_time: true
+  level: debug                              # debug, info, warn, error: true
+
+redis:
+  host: 127.0.0.1
+  port: 6379
+  username: 
+  password: 
+  database: 0
+  qr_span: 100
