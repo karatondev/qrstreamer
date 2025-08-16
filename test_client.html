@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket QR Streamer Test Client</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .status { padding: 10px; margin: 10px 0; border-radius: 4px; }
+        .connected { background-color: #d4edda; color: #155724; }
+        .disconnected { background-color: #f8d7da; color: #721c24; }
+        .messages { 
+            height: 300px; 
+            overflow-y: scroll; 
+            border: 1px solid #ccc; 
+            padding: 10px; 
+            background-color: #f9f9f9;
+        }
+        .message { 
+            margin: 5px 0; 
+            padding: 5px; 
+            border-left: 3px solid #007bff;
+            background-color: white;
+        }
+        .qr-code { border-left-color: #28a745; }
+        .status-msg { border-left-color: #ffc107; }
+        button { 
+            padding: 10px 20px; 
+            margin: 5px; 
+            background-color: #007bff; 
+            color: white; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer;
+        }
+        button:hover { background-color: #0056b3; }
+        button:disabled { background-color: #ccc; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WebSocket QR Streamer Test Client</h1>
+        
+        <div id="status" class="status disconnected">
+            Status: Disconnected
+        </div>
+        
+        <div>
+            <label for="clientId">Client ID:</label>
+            <input type="text" id="clientId" placeholder="Enter your client ID" value="client-001">
+            <button id="connectBtn" onclick="connect()">Connect</button>
+            <button id="disconnectBtn" onclick="disconnect()" disabled>Disconnect</button>
+            <button id="emitBtn" onclick="triggerEmit()" disabled>Trigger Emit QR (All)</button>
+            <button id="emitToMeBtn" onclick="triggerEmitToMe()" disabled>Trigger Emit QR (To Me)</button>
+            <button id="getClientsBtn" onclick="getConnectedClients()">Get Connected Clients</button>
+            <button id="getDevicesBtn" onclick="getDevices()">Get Devices (gRPC)</button>
+            <button id="sendMessageBtn" onclick="sendMessage()">Send Message (gRPC)</button>
+            <button id="clearBtn" onclick="clearMessages()">Clear Messages</button>
+        </div>
+        
+        <h3>Messages:</h3>
+        <div id="messages" class="messages"></div>
+    </div>
+
+    <script>
+        let ws = null;
+        let isConnected = false;
+        
+        function updateStatus(connected) {
+            const statusDiv = document.getElementById('status');
+            const connectBtn = document.getElementById('connectBtn');
+            const disconnectBtn = document.getElementById('disconnectBtn');
+            const emitBtn = document.getElementById('emitBtn');
+            const emitToMeBtn = document.getElementById('emitToMeBtn');
+            const clientIdInput = document.getElementById('clientId');
+            
+            if (connected) {
+                statusDiv.textContent = `Status: Connected as ${clientIdInput.value}`;
+                statusDiv.className = 'status connected';
+                connectBtn.disabled = true;
+                disconnectBtn.disabled = false;
+                emitBtn.disabled = false;
+                emitToMeBtn.disabled = false;
+                clientIdInput.disabled = true;
+            } else {
+                statusDiv.textContent = 'Status: Disconnected';
+                statusDiv.className = 'status disconnected';
+                connectBtn.disabled = false;
+                disconnectBtn.disabled = true;
+                emitBtn.disabled = true;
+                emitToMeBtn.disabled = true;
+                clientIdInput.disabled = false;
+            }
+            isConnected = connected;
+        }
+        
+        function addMessage(type, data, timestamp) {
+            const messagesDiv = document.getElementById('messages');
+            const messageDiv = document.createElement('div');
+            
+            let className = 'message';
+            if (type === 'qr_code') {
+                className += ' qr-code';
+            } else if (type === 'status') {
+                className += ' status-msg';
+            }
+            
+            messageDiv.className = className;
+            messageDiv.innerHTML = `
+                <strong>[${new Date(timestamp).toLocaleTimeString()}] ${type.toUpperCase()}</strong><br>
+                <pre>${JSON.stringify(data, null, 2)}</pre>
+            `;
+            
+            messagesDiv.appendChild(messageDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+        
+        function connect() {
+            if (ws) {
+                ws.close();
+            }
+            
+            const clientId = document.getElementById('clientId').value;
+            if (!clientId) {
+                addMessage('error', 'Please enter a Client ID', new Date().toISOString());
+                return;
+            }
+            
+            ws = new WebSocket(`ws://localhost:8080/ws?id=${clientId}`);
+            
+            ws.onopen = function(event) {
+                console.log('Connected to WebSocket');
+                updateStatus(true);
+                addMessage('system', `Connected to WebSocket server with ID: ${clientId}`, new Date().toISOString());
+            };
+            
+            ws.onmessage = function(event) {
+                console.log('Message received:', event.data);
+                try {
+                    const message = JSON.parse(event.data);
+                    addMessage(message.type, message.data, message.timestamp);
+                } catch (e) {
+                    addMessage('raw', event.data, new Date().toISOString());
+                }
+            };
+            
+            ws.onclose = function(event) {
+                console.log('WebSocket connection closed');
+                updateStatus(false);
+                addMessage('system', 'Disconnected from WebSocket server', new Date().toISOString());
+            };
+            
+            ws.onerror = function(error) {
+                console.error('WebSocket error:', error);
+                addMessage('error', 'WebSocket error occurred', new Date().toISOString());
+            };
+        }
+        
+        function disconnect() {
+            if (ws) {
+                ws.close();
+            }
+        }
+        
+        function triggerEmit() {
+            fetch('/api/emit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.text())
+            .then(data => {
+                console.log('Emit triggered:', data);
+                addMessage('system', 'Manual emit triggered: ' + data, new Date().toISOString());
+            })
+            .catch(error => {
+                console.error('Error triggering emit:', error);
+                addMessage('error', 'Failed to trigger emit: ' + error.message, new Date().toISOString());
+            });
+        }
+        
+        function triggerEmitToMe() {
+            const clientId = document.getElementById('clientId').value;
+            fetch(`/api/emit/client?client_id=${clientId}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.text())
+            .then(data => {
+                console.log('Emit to me triggered:', data);
+                addMessage('system', 'Emit to me triggered: ' + data, new Date().toISOString());
+            })
+            .catch(error => {
+                console.error('Error triggering emit to me:', error);
+                addMessage('error', 'Failed to trigger emit to me: ' + error.message, new Date().toISOString());
+            });
+        }
+        
+        function getConnectedClients() {
+            fetch('/api/clients')
+            .then(response => response.json())
+            .then(data => {
+                console.log('Connected clients:', data);
+                addMessage('system', 'Connected clients: ' + JSON.stringify(data), new Date().toISOString());
+            })
+            .catch(error => {
+                console.error('Error getting clients:', error);
+                addMessage('error', 'Failed to get clients: ' + error.message, new Date().toISOString());
+            });
+        }
+        
+        function getDevices() {
+            fetch('/api/devices')
+            .then(response => response.json())
+            .then(data => {
+                console.log('Devices from gRPC:', data);
+                addMessage('system', 'Devices fetched via gRPC: ' + JSON.stringify(data), new Date().toISOString());
+            })
+            .catch(error => {
+                console.error('Error getting devices:', error);
+                addMessage('error', 'Failed to get devices: ' + error.message, new Date().toISOString());
+            });
+        }
+        
+        function sendMessage() {
+            fetch('/api/send-message', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    to: '1234567890@s.whatsapp.net',
+                    message: 'Test message from websocket client'
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Message sent via gRPC:', data);
+                addMessage('system', 'Message sent via gRPC: ' + JSON.stringify(data), new Date().toISOString());
+            })
+            .catch(error => {
+                console.error('Error sending message:', error);
+                addMessage('error', 'Failed to send message: ' + error.message, new Date().toISOString());
+            });
+        }
+        
+        function clearMessages() {
+            document.getElementById('messages').innerHTML = '';
+        }
+        
+        // Initialize
+        updateStatus(false);
+    </script>
+</body>
+</html>

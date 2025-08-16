@@ -1,0 +1,2 @@
+2025-08-14 21:36:11.997 - ERROR - MAIN - Failed connect to Redis: failed to connect to redis: dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2025-08-14 21:37:42.763 - ERROR - MAIN - Failed connect to Redis: failed to connect to redis: dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
