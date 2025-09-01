@@ -32,7 +32,7 @@ func Run(cfg *util.Config) {
 	logger.Infofctx(provider.AppLog, ctx, "Application started")
 
 	app := handler.NewApp(logger)
-	hub := handler.NewHub()
+	hub := handler.NewHub(logger)
 	svc := service.NewService(logger, hub, app, redis)
 
 	go hub.Run()

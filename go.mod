@@ -10,6 +10,7 @@ require (
 
 require (
 	github.com/gorilla/websocket v1.5.3
+	github.com/mdp/qrterminal v1.0.1
 	github.com/redis/go-redis/v9 v9.12.0
 	google.golang.org/grpc v1.67.3
 	google.golang.org/protobuf v1.36.6
@@ -35,4 +36,5 @@ require (
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250218202821-56aae31c358a // indirect
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
+	rsc.io/qr v0.2.0 // indirect
 )

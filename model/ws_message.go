@@ -5,8 +5,9 @@ import (
 )
 
 type WSMessage struct {
-	Type      string    `json:"type"`
-	DeviceId  string    `json:"device_id"`
-	Data      string    `json:"data"`
-	Timestamp time.Time `json:"timestamp"`
+	MsgStatus  bool      `json:"msg_status"`
+	Type       string    `json:"type"`
+	WhatsappId string    `json:"whatsapp_id"`
+	Data       string    `json:"data"`
+	Timestamp  time.Time `json:"timestamp"`
 }

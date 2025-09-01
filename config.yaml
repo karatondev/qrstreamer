@@ -3,7 +3,7 @@ server:
 
 logger:
   dir: log                                  # DO NOT EDIT!
-  file_name: wacoregateway
+  file_name: qrstreamer
   max_backups: 0                            # set 0 for unlimited backups
   max_size: 10                              # in mb
   max_age: 90                               # in days, set 0 for unlimited days
@@ -12,7 +12,7 @@ logger:
   level: debug                              # debug, info, warn, error: true
 
 redis:
-  host: 127.0.0.1
+  host: 172.26.90.92
   port: 6379
   username: 
   password: 

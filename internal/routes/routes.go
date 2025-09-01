@@ -1,28 +1,42 @@
 package routes
 
 import (
+	"context"
 	"fmt"
 	"net/http"
 	"qrstreamer/internal/handler"
 	"qrstreamer/internal/service"
+	"qrstreamer/model/constant"
+
+	"github.com/google/uuid"
 )
 
 func RegisterRoutes(hub *handler.Hub, svc service.QRStreamer) {
 
 	http.HandleFunc("/ws", func(w http.ResponseWriter, r *http.Request) {
-		deviceID := r.URL.Query().Get("id")
-		if deviceID == "" {
-			// Jika tidak ada ID, ambil dari header
-			deviceID = r.Header.Get("Device-ID")
+		ctx := context.WithValue(r.Context(), constant.CtxReqIDKey, fmt.Sprintf("%s", uuid.New().String()))
+		r = r.WithContext(ctx)
+
+		whatsappID := r.URL.Query().Get("wa_id")
+		userID := r.URL.Query().Get("user_id")
+		if whatsappID == "" {
+			whatsappID = r.Header.Get("Whatsapp-ID")
 		}
-		if deviceID == "" {
-			http.Error(w, "Device ID is required. Use ?id=your_device_id or Device-ID header", http.StatusBadRequest)
+		if userID == "" {
+			userID = r.Header.Get("User-ID")
+		}
+		if whatsappID == "" {
+			http.Error(w, "Whatsapp ID is required. Use ?id=your_whatsapp_id or Whatsapp-ID header", http.StatusBadRequest)
+			return
+		}
+		if userID == "" {
+			http.Error(w, "User ID is required. Use ?user_id=your_user_id or User-ID header", http.StatusBadRequest)
 			return
 		}
 
 		handler.ServeWS(hub, w, r)
 
-		if err := svc.StreamWhatsappQR(r.Context(), deviceID); err != nil {
+		if err := svc.StreamWhatsappQR(r.Context(), userID, whatsappID); err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
 		}

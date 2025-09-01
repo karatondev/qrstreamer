@@ -1,9 +1,13 @@
 package handler
 
 import (
-	"log"
+	"context"
+	"encoding/json"
 	"net/http"
+	"qrstreamer/internal/provider"
+	"qrstreamer/model"
 	"sync"
+	"time"
 
 	"github.com/gorilla/websocket"
 )
@@ -15,17 +19,34 @@ var upgrader = websocket.Upgrader{
 }
 
 type Client struct {
+	ctx  context.Context
 	id   string
 	conn *websocket.Conn
 	send chan []byte
 }
 
 type Hub struct {
-	clients    map[string]*Client // map[deviceID]*Client
+	logger     provider.ILogger
+	clients    map[string]*Client // map[whatsappID]*Client
 	broadcast  chan []byte
 	register   chan *Client
 	unregister chan *Client
 	mu         sync.Mutex
+}
+
+func (h *Hub) EmitMessageToClient(ctx context.Context, whatsappID string, data model.WSMessage) error {
+
+	msgBytes, err := json.Marshal(data)
+	if err != nil {
+		return err
+	}
+
+	h.logger.Infofctx(provider.AppLog, ctx, "Emitting to websocket client %s", msgBytes)
+
+	// Emit to Websocket client
+	h.EmitToClient(whatsappID, msgBytes)
+
+	return nil
 }
 
 // EmitToAll mengirim pesan ke semua client yang terhubung
@@ -34,16 +55,16 @@ func (h *Hub) EmitToAll(message []byte) {
 }
 
 // EmitToClient mengirim pesan ke client tertentu berdasarkan ID
-func (h *Hub) EmitToClient(deviceID string, message []byte) {
+func (h *Hub) EmitToClient(whatsappID string, message []byte) {
 	h.mu.Lock()
 	defer h.mu.Unlock()
 
-	if client, exists := h.clients[deviceID]; exists {
+	if client, exists := h.clients[whatsappID]; exists {
 		select {
 		case client.send <- message:
 		default:
 			// Client buffer penuh, disconnect client
-			delete(h.clients, deviceID)
+			delete(h.clients, whatsappID)
 			close(client.send)
 		}
 	}
@@ -62,16 +83,29 @@ func (h *Hub) GetClients() []*Client {
 }
 
 // GetClientByID mengembalikan client berdasarkan ID
-func (h *Hub) GetClientByID(deviceID string) (*Client, bool) {
+func (h *Hub) GetClientByID(whatsappID string) (*Client, bool) {
 	h.mu.Lock()
 	defer h.mu.Unlock()
 
-	client, exists := h.clients[deviceID]
+	client, exists := h.clients[whatsappID]
 	return client, exists
 }
 
-// GetdeviceIDs mengembalikan daftar semua client ID yang terhubung
-func (h *Hub) GetdeviceIDs() []string {
+// Close client connection by client ID
+func (h *Hub) CloseClientConnection(whatsappID string) {
+	h.mu.Lock()
+	defer h.mu.Unlock()
+
+	if client, exists := h.clients[whatsappID]; exists {
+		delete(h.clients, whatsappID)
+		close(client.send)
+		client.conn.Close()
+		h.logger.Infofctx(provider.AppLog, client.ctx, "Client disconnected with ID: %s, Address: %s", client.id, client.conn.RemoteAddr())
+	}
+}
+
+// GetwhatsappIDs mengembalikan daftar semua client ID yang terhubung
+func (h *Hub) GetwhatsappIDs() []string {
 	h.mu.Lock()
 	defer h.mu.Unlock()
 
@@ -82,8 +116,9 @@ func (h *Hub) GetdeviceIDs() []string {
 	return ids
 }
 
-func NewHub() *Hub {
+func NewHub(logger provider.ILogger) *Hub {
 	return &Hub{
+		logger:     logger,
 		clients:    make(map[string]*Client),
 		broadcast:  make(chan []byte),
 		register:   make(chan *Client),
@@ -97,8 +132,17 @@ func (h *Hub) Run() {
 		case client := <-h.register:
 			h.mu.Lock()
 			h.clients[client.id] = client
+			h.logger.Infofctx(provider.AppLog, client.ctx, "Client connected with ID: %s, Address: %s", client.id, client.conn.RemoteAddr())
 			h.mu.Unlock()
-			log.Printf("Client connected with ID: %s, Address: %s", client.id, client.conn.RemoteAddr())
+
+			message := model.WSMessage{
+				MsgStatus:  true,
+				Type:       "ws_state",
+				WhatsappId: client.id,
+				Data:       "Webstream Connected to Server",
+				Timestamp:  time.Now(),
+			}
+			h.EmitMessageToClient(client.ctx, client.id, message)
 
 		case client := <-h.unregister:
 			h.mu.Lock()
@@ -106,7 +150,7 @@ func (h *Hub) Run() {
 				delete(h.clients, client.id)
 				close(client.send)
 				client.conn.Close()
-				log.Printf("Client disconnected with ID: %s, Address: %s", client.id, client.conn.RemoteAddr())
+				h.logger.Infofctx(provider.AppLog, client.ctx, "Client disconnected with ID: %s, Address: %s", client.id, client.conn.RemoteAddr())
 			}
 			h.mu.Unlock()
 
@@ -135,7 +179,7 @@ func (c *Client) readPump(h *Hub) {
 		if err != nil {
 			break
 		}
-		log.Printf("Received: %s", message)
+		h.logger.Debugfctx(provider.AppLog, c.ctx, "Received: %s", message)
 		h.broadcast <- message
 	}
 }
@@ -151,25 +195,29 @@ func (c *Client) writePump() {
 
 func ServeWS(h *Hub, w http.ResponseWriter, r *http.Request) {
 	// Ambil client ID dari query parameter
-	deviceID := r.URL.Query().Get("id")
+	whatsappID := r.URL.Query().Get("wa_id")
+	if whatsappID == "" {
+		whatsappID = r.Header.Get("Whatsapp-ID")
+	}
 
 	// Cek apakah client ID sudah ada
-	h.mu.Lock()
-	if _, exists := h.clients[deviceID]; exists {
-		h.mu.Unlock()
-		http.Error(w, "Client ID already connected", http.StatusConflict)
-		return
-	}
-	h.mu.Unlock()
+	// h.mu.Lock()
+	// if _, exists := h.clients[whatsappID]; exists {
+	// 	h.mu.Unlock()
+	// 	http.Error(w, "Client ID already connected", http.StatusConflict)
+	// 	return
+	// }
+	// h.mu.Unlock()
 
 	conn, err := upgrader.Upgrade(w, r, nil)
 	if err != nil {
-		log.Println("Upgrade error:", err)
+		h.logger.Errorfctx(provider.AppLog, r.Context(), false, "Upgrade error: %v", err)
 		return
 	}
 
 	client := &Client{
-		id:   deviceID,
+		ctx:  r.Context(),
+		id:   whatsappID,
 		conn: conn,
 		send: make(chan []byte, 256),
 	}

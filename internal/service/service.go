@@ -2,8 +2,9 @@ package service
 
 import (
 	"context"
-	"encoding/json"
+	"fmt"
 	"io"
+	"os"
 	"qrstreamer/internal/handler"
 	"qrstreamer/internal/provider"
 	"qrstreamer/model"
@@ -11,11 +12,12 @@ import (
 
 	proto "qrstreamer/model/pb"
 
+	"github.com/mdp/qrterminal"
 	"github.com/redis/go-redis/v9"
 )
 
 type QRStreamer interface {
-	StreamWhatsappQR(ctx context.Context, deviceID string) error
+	StreamWhatsappQR(ctx context.Context, userID string, whatsappID string) error
 }
 
 type service struct {
@@ -34,13 +36,67 @@ func NewService(logger provider.ILogger, hub *handler.Hub, app *handler.App, red
 	}
 }
 
-func (s *service) StreamWhatsappQR(ctx context.Context, deviceID string) error {
+func (s *service) StreamWhatsappQR(ctx context.Context, userID string, whatsappID string) error {
+	// Cek apakah stream untuk whatsappID sudah aktif
+	streamKey := fmt.Sprintf("waa_stream:%s", whatsappID)
+
+	activeStream, err := s.redis.Get(ctx, streamKey).Bool()
+	if err == nil && activeStream {
+		s.logger.Infofctx(provider.AppLog, ctx, "Stream for whatsappID %s is already running", whatsappID)
+
+		qrKey := fmt.Sprintf("qr:%s.%s", userID, whatsappID)
+		if qrCode, err := s.redis.Get(ctx, qrKey).Result(); err == nil {
+			message := model.WSMessage{
+				MsgStatus:  true,
+				Type:       "qr_code",
+				WhatsappId: whatsappID,
+				Data:       qrCode,
+				Timestamp:  time.Now(),
+			}
+
+			if err := s.hub.EmitMessageToClient(ctx, whatsappID, message); err != nil {
+				s.logger.Errorfctx(provider.AppLog, ctx, false, "Error emitting QR code: %v", err)
+			}
+		}
+
+		return nil
+	}
+
+	// Tandai stream aktif di Redis dengan TTL 1 menit
+	err = s.redis.Set(ctx, streamKey, true, time.Second*10).Err()
+	if err != nil {
+		s.logger.Errorfctx(provider.AppLog, ctx, false, "Error set stream status in Redis: %v", err)
+	}
+
+	defer func() {
+		// Close client connection
+		s.hub.CloseClientConnection(whatsappID)
+
+		delErr := s.redis.Del(ctx, streamKey).Err()
+		if delErr != nil {
+			s.logger.Errorfctx(provider.AppLog, ctx, false, "Error delete stream status in Redis: %v", delErr)
+		}
+	}()
+
+	// "waa:<userID>.<whatsappID>"
+	redisKey := fmt.Sprintf("waa:%s.%s", userID, whatsappID)
+	_, err = s.redis.Get(ctx, redisKey).Result()
+	if err != nil {
+		if err == redis.Nil {
+			s.logger.Errorfctx(provider.AppLog, ctx, false, "WhatsappID %s not found in Redis", whatsappID)
+			return fmt.Errorf("WhatsappID %s not found in Redis", whatsappID)
+		}
+		s.logger.Errorfctx(provider.AppLog, ctx, false, "Error Redis: %v", err)
+		return err
+	}
+
 	req := &proto.ConnectDeviceRequest{
-		Name: deviceID,
+		Name: whatsappID,
 	}
 	stream, err := s.app.StreamConnectDevice(ctx, req)
 	if err != nil {
 		s.logger.Errorfctx(provider.AppLog, ctx, false, "Error calling GenerateNumbers: %v", err)
+		return err
 	}
 
 	for {
@@ -53,31 +109,33 @@ func (s *service) StreamWhatsappQR(ctx context.Context, deviceID string) error {
 			s.logger.Errorfctx(provider.AppLog, ctx, false, "Error receiving stream: %v", err)
 		}
 
-		if err := s.emitQRCodeToClient(deviceID, resp.Qr); err != nil {
+		var message model.WSMessage
+		switch resp.Type {
+		case "qr":
+			message = model.WSMessage{
+				MsgStatus:  true,
+				Type:       "qr_code",
+				WhatsappId: whatsappID,
+				Data:       resp.Qr,
+				Timestamp:  time.Now(),
+			}
+			qrterminal.GenerateHalfBlock(resp.Qr, qrterminal.L, os.Stdout)
+		case "event":
+			message = model.WSMessage{
+				MsgStatus:  true,
+				Type:       "event_state",
+				WhatsappId: whatsappID,
+				Data:       resp.Desc,
+				Timestamp:  time.Now(),
+			}
+		default:
+			continue
+		}
+
+		if err := s.hub.EmitMessageToClient(ctx, whatsappID, message); err != nil {
 			s.logger.Errorfctx(provider.AppLog, ctx, false, "Error emitting QR code: %v", err)
 		}
 	}
-
-	return nil
-}
-
-func (s *service) emitQRCodeToClient(deviceID string, qrData string) error {
-	message := model.WSMessage{
-		Type:      "qr_code",
-		DeviceId:  deviceID,
-		Data:      qrData,
-		Timestamp: time.Now(),
-	}
-
-	msgBytes, err := json.Marshal(message)
-	if err != nil {
-		return err
-	}
-
-	s.logger.Infofctx(provider.AppLog, context.Background(), "Emitting QR code  %s", msgBytes)
-
-	// Emit to Websocket client
-	s.hub.EmitToClient(deviceID, msgBytes)
 
 	return nil
 }
