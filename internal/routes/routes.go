@@ -6,9 +6,7 @@ import (
 	"net/http"
 	"qrstreamer/internal/handler"
 	"qrstreamer/internal/service"
-	"qrstreamer/model"
 	"qrstreamer/model/constant"
-	"time"
 
 	"github.com/google/uuid"
 )
@@ -39,13 +37,8 @@ func RegisterRoutes(hub *handler.Hub, svc service.QRStreamer) {
 		handler.ServeWS(hub, w, r)
 
 		if err := svc.StreamWhatsappQR(r.Context(), userID, whatsappID); err != nil {
-			hub.EmitMessageToClient(ctx, whatsappID, model.WSMessage{
-				MsgStatus:  false,
-				Type:       "error",
-				WhatsappId: whatsappID,
-				Data:       err.Error(),
-				Timestamp:  time.Now(),
-			})
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
 		}
 
 	})

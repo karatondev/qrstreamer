@@ -1,0 +1,21 @@
+2025-09-07 16:10:55.012 - INFO - MAIN - Application started
+2025-09-07 16:10:55.015 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-09-07 16:10:55.015 - INFO - MAIN - Websocket Server started on :8002
+2025-09-07 16:11:57.783 - INFO - MAIN - Receiving signal: interrupt
+2025-09-07 16:11:57.784 - INFO - MAIN - Successfully stop Application.
+2025-09-07 16:12:02.910 - INFO - MAIN - Application started
+2025-09-07 16:12:02.911 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-09-07 16:12:02.911 - INFO - MAIN - Websocket Server started on :8002
+2025-09-07 16:13:00.547 - INFO - MAIN - Receiving signal: interrupt
+2025-09-07 16:13:00.548 - INFO - MAIN - Successfully stop Application.
+2025-09-07 16:13:08.314 - INFO - MAIN - Application started
+2025-09-07 16:13:08.316 - INFO - MAIN - Starting gRPC client for server at localhost:50051
+2025-09-07 16:13:08.316 - INFO - MAIN - Websocket Server started on :8002
+2025-09-07 16:14:03.380 - INFO - e835bb43-f28d-48bb-8f6a-2d46a3952ba4 - Client connected with ID: cf93d43c-6c70-4739-a73a-7beee236a1b6, Address: 127.0.0.1:58063
+2025-09-07 16:14:03.386 - INFO - e835bb43-f28d-48bb-8f6a-2d46a3952ba4 - Emitting to websocket client {"msg_status":true,"type":"ws_state","whatsapp_id":"cf93d43c-6c70-4739-a73a-7beee236a1b6","data":"Webstream Connected to Server","timestamp":"2025-09-07T16:14:03.3866597+07:00"}
+2025-09-07 16:14:03.394 - INFO - e835bb43-f28d-48bb-8f6a-2d46a3952ba4 - Client disconnected with ID: cf93d43c-6c70-4739-a73a-7beee236a1b6, Address: 127.0.0.1:58063
+2025-09-07 16:14:05.535 - INFO - 30f5909d-feb8-4401-b2bb-051101352e7b - Client connected with ID: cf93d43c-6c70-4739-a73a-7beee236a1b6, Address: 127.0.0.1:58088
+2025-09-07 16:14:05.536 - INFO - 30f5909d-feb8-4401-b2bb-051101352e7b - Emitting to websocket client {"msg_status":true,"type":"ws_state","whatsapp_id":"cf93d43c-6c70-4739-a73a-7beee236a1b6","data":"Webstream Connected to Server","timestamp":"2025-09-07T16:14:05.5362334+07:00"}
+2025-09-07 16:14:05.538 - INFO - 30f5909d-feb8-4401-b2bb-051101352e7b - Client disconnected with ID: cf93d43c-6c70-4739-a73a-7beee236a1b6, Address: 127.0.0.1:58088
+2025-09-07 16:14:20.270 - INFO - MAIN - Receiving signal: interrupt
+2025-09-07 16:14:20.270 - INFO - MAIN - Successfully stop Application.

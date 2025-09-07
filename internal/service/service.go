@@ -76,7 +76,7 @@ func (s *service) StreamWhatsappQR(ctx context.Context, userID string, whatsappI
 
 	defer func() {
 		// Close client connection
-		s.hub.CloseClientConnection(whatsappID)
+		//s.hub.CloseClientConnection(whatsappID)
 
 		delErr := s.redis.Del(ctx, streamKey).Err()
 		if delErr != nil {
@@ -90,7 +90,14 @@ func (s *service) StreamWhatsappQR(ctx context.Context, userID string, whatsappI
 	if err != nil {
 		if err == redis.Nil {
 			s.logger.Errorfctx(provider.AppLog, ctx, false, "WhatsappID %s not found in Redis", whatsappID)
-			return fmt.Errorf("WhatsappID %s not found in Redis", whatsappID)
+			s.hub.EmitMessageToClient(ctx, whatsappID, model.WSMessage{
+				MsgStatus:  false,
+				Type:       "error",
+				WhatsappId: whatsappID,
+				Data:       fmt.Errorf("WhatsappID %s not found in Redis", whatsappID).Error(),
+				Timestamp:  time.Now(),
+			})
+			return nil
 		}
 		s.logger.Errorfctx(provider.AppLog, ctx, false, "Error Redis: %v", err)
 		return err
