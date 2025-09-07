@@ -1,2 +1,0 @@
-2025-09-01 19:52:38.186 - ERROR - b459f656-9edb-4c70-9bff-cd591a38ca39 - Error receiving stream: rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:64610->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
-2025-09-01 21:02:17.887 - ERROR - 7e811556-ca1e-4d79-900c-6f59eb9e1ba3 - Error receiving stream: rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:55291->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.

@@ -1,6 +1,9 @@
 server:
   port: 50051
 
+websocket:
+  port: 8002
+
 logger:
   dir: log                                  # DO NOT EDIT!
   file_name: qrstreamer
@@ -17,4 +20,6 @@ redis:
   username: 
   password: 
   database: 0
-  qr_span: 100
+
+cache:
+  wsstream: 100 #timeout in seconds

@@ -13,6 +13,9 @@ type Config struct {
 	Server struct {
 		Port int `mapstructure:"port"`
 	}
+	Websocket struct {
+		Port int `mapstructure:"port"`
+	} `mapstructure:"websocket"`
 	Logger struct {
 		Dir        string `mapstructure:"dir"`
 		FileName   string `mapstructure:"file_name"`
@@ -32,6 +35,9 @@ type Config struct {
 		Options  []string `mapstructure:"options"`
 		QRSpan   int      `mapstructure:"qr_span"`
 	} `mapstructure:"redis"`
+	Cache struct {
+		WSStream int `mapstructure:"wsstream"`
+	} `mapstructure:"cache"`
 }
 
 // LoadConfig reads configuration from file or environment variables.

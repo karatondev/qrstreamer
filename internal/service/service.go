@@ -8,6 +8,7 @@ import (
 	"qrstreamer/internal/handler"
 	"qrstreamer/internal/provider"
 	"qrstreamer/model"
+	"qrstreamer/util"
 	"time"
 
 	proto "qrstreamer/model/pb"
@@ -16,10 +17,15 @@ import (
 	"github.com/redis/go-redis/v9"
 )
 
+const (
+	keyWaStreamPrefix = "wsstream:%s"
+	waaKeyPrefix      = "waa:%s"
+	keyQrPrefix       = "qr:%s"
+)
+
 type QRStreamer interface {
 	StreamWhatsappQR(ctx context.Context, userID string, whatsappID string) error
 }
-
 type service struct {
 	logger provider.ILogger
 	hub    *handler.Hub
@@ -38,13 +44,13 @@ func NewService(logger provider.ILogger, hub *handler.Hub, app *handler.App, red
 
 func (s *service) StreamWhatsappQR(ctx context.Context, userID string, whatsappID string) error {
 	// Cek apakah stream untuk whatsappID sudah aktif
-	streamKey := fmt.Sprintf("waa_stream:%s", whatsappID)
+	streamKey := fmt.Sprintf(keyWaStreamPrefix, whatsappID)
 
 	activeStream, err := s.redis.Get(ctx, streamKey).Bool()
 	if err == nil && activeStream {
 		s.logger.Infofctx(provider.AppLog, ctx, "Stream for whatsappID %s is already running", whatsappID)
 
-		qrKey := fmt.Sprintf("qr:%s.%s", userID, whatsappID)
+		qrKey := fmt.Sprintf(keyQrPrefix, whatsappID)
 		if qrCode, err := s.redis.Get(ctx, qrKey).Result(); err == nil {
 			message := model.WSMessage{
 				MsgStatus:  true,
@@ -63,7 +69,7 @@ func (s *service) StreamWhatsappQR(ctx context.Context, userID string, whatsappI
 	}
 
 	// Tandai stream aktif di Redis dengan TTL 1 menit
-	err = s.redis.Set(ctx, streamKey, true, time.Second*10).Err()
+	err = s.redis.Set(ctx, streamKey, true, time.Duration(util.Configuration.Cache.WSStream)*time.Second).Err()
 	if err != nil {
 		s.logger.Errorfctx(provider.AppLog, ctx, false, "Error set stream status in Redis: %v", err)
 	}
@@ -78,8 +84,8 @@ func (s *service) StreamWhatsappQR(ctx context.Context, userID string, whatsappI
 		}
 	}()
 
-	// "waa:<userID>.<whatsappID>"
-	redisKey := fmt.Sprintf("waa:%s.%s", userID, whatsappID)
+	// "waa:<whatsappID>"
+	redisKey := fmt.Sprintf(waaKeyPrefix, whatsappID)
 	_, err = s.redis.Get(ctx, redisKey).Result()
 	if err != nil {
 		if err == redis.Nil {

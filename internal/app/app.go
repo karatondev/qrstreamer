@@ -89,8 +89,8 @@ func Run(cfg *util.Config) {
 	go func() {
 		// Start WS HTTP server
 		routes.RegisterRoutes(hub, svc)
-		logger.Infofctx(provider.AppLog, ctx, "Websocket Server started on :8080")
-		if err := http.ListenAndServe(":8080", nil); err != nil {
+		logger.Infofctx(provider.AppLog, ctx, "Websocket Server started on :%d", cfg.Websocket.Port)
+		if err := http.ListenAndServe(fmt.Sprintf(":%d", cfg.Websocket.Port), nil); err != nil {
 			logger.Errorfctx(provider.AppLog, ctx, false, "Failed to start Websocket Server: %v", err)
 		}
 	}()
